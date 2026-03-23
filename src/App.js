@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { About, Contact, Experience, Hero, Navbar, Tech, Projects, StarsCanvas ,Certifications, Footer} from "./components";
+import ProjectDetails from "./components/ProjectDetails";
+import SkillsPage from "./components/SkillsPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='relative z-0 bg-primary'>
+        <Navbar />
+        
+        <Routes>
+          {/* MAIN HOME PAGE */}
+          <Route path="/" element={
+            <>
+              <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+                <Hero />
+              </div>
+              <About />
+              <Experience />
+              {/* <Tech /> */}
+              <Projects /> 
+              <Certifications />
+              <div className='relative z-0'>
+                <Contact />
+                <StarsCanvas />
+              </div>
+            </>
+          } />
+
+          {/* DETAILED PROJECT PAGE */}
+         
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/project-details" element={<ProjectDetails />} />
+        </Routes>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 

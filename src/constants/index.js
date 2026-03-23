@@ -100,8 +100,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2025 - Present",
     points: [
-      "Providing personalized tutoring for CBSE and ICSE students (Classes 10-12).",
-      "Focusing on Java, Python, SQL, and programming fundamentals.",
+      "Providing personalized tutoring for CBSE and State Board students (Classes 10-12).",
+      "Focusing on Java, C++, Python, SQL, and programming fundamentals.",
     ],
   },
   {
@@ -112,7 +112,7 @@ const experiences = [
     date: "August 2023 - Present",
     points: [
       "Specializing in Computer Science with a focus on Full-Stack Development.",
-      "Completed intensive C++ training in OOPs and Data Structures.",
+      "Maintained a consistent academic record with a 7.12 CGPA.",
     ],
   },
   {

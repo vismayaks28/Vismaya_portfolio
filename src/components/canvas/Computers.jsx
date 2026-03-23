@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   // This points to the folder you put in 'public'
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.glb");
   return (
     <mesh>
       {/* 1. Ambient Light: This lights up EVERYTHING equally so there are no pitch-black spots */}
